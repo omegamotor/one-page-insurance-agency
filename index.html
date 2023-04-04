@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta name="description" content="{{$seoGlobal->seo_description}}">
+    <meta name="keywords" content="{{$seoGlobal->seo_keywords}}">
+    <title>PPU - Pewny Plan Ubezpieczeniowy</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+</head>
+
+<body class="font-sans antialiased">
+    <section class="nav--top">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logoV2.png" width="auto" height="64px" class="ppu__logo-mobile" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pc" id="navbarSupportedContentPC">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
+                        <li class="nav-item ppu-nav-item" id="nav-item-about-us">
+                            <a class="nav-link" href="#aboutUs">O nas</a>
+                        </li>
+                        <li class="nav-item ppu-nav-item" id="nav-item-team">
+                            <a class="nav-link" href="#team" id="nav-item-1">Zespół</a>
+                        </li>
+                        <li class="nav-item ppu-nav-item">
+                            <a class="nav-link" href="#specializations" id="nav-item-specializations">Specjalizacje</a>
+                        </li>
+                        <li class="nav-item ppu-nav-item">
+                            <a class="nav-link" href="#whyUs" id="nav-item-why-us">Dlaczego my</a>
+                        </li>
+
+                        <li class="nav-item ppu-nav-item">
+                            <a class="nav-link" href="#contact" id="nav-item-contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="collapse navbar-collapse mobile mobile-nav" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item ppu-nav-item">
+                    <a class="nav-link" href="#aboutUs" onClick="closeNav()">O nas</a>
+                    <div class="underline"></div>
+                </li>
+                <hr>
+                <li class="nav-item ppu-nav-item">
+                    <a class="nav-link" href="#team" onClick="closeNav()">Zespół</a>
+                    <div class="underline"></div>
+                </li>
+                <hr>
+                <li class="nav-item ppu-nav-item">
+                    <a class="nav-link" href="#specializations" onClick="closeNav()">Specjalizacje</a>
+                    <div class="underline"></div>
+                </li>
+                <hr>
+                <li class="nav-item ppu-nav-item">
+                    <a class="nav-link" href="#whyUs" onClick="closeNav()">Dlaczego my</a>
+                    <div class="underline"></div>
+                </li>
+                <hr>
+                <li class="nav-item ppu-nav-item">
+                    <a class="nav-link" href="#contact" onClick="closeNav()">Kontakt</a>
+                    <div class="underline"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="m-nav-fix mt-4 pt-1">
+        <div class="container-fluid container-xxl p-0 mt-5">
+            <div id="carouselPpuIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carusela/1.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carusela/2.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carusela/3.png" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPpuIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPpuIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="img-text">
+                    <h2>Agencja ubezpieczeniowa PPU - Pewny Plan Ubezpieczeniowy</h2>
+                    <h4>Zaufaj nam i powierz swoje sprawy w ręce profesjonalistów.</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="p-3 pt-5" id="aboutUs">
+        <div class="container text-center">
+            <h1 class="b mb-5 text-center" style="padding-top: 5rem">O nas</h1>
+            <p class="text-justify">
+                Nasza agencja ubezpieczeniowa powstała z myślą o zapewnieniu klientom najwyższej
+                jakości usług ubezpieczeniowych. Jako firma działamy na rynku już od kilku lat i zyskaliśmy opinię
+                godnego
+                zaufania partnera w dziedzinie ubezpieczeń.
+
+                W naszym biurze skupiamy się na indywidualnym podejściu do każdego klienta. Nasz zespół składjący się z
+                doświadczonych i wysoko wykwalifikowanych agentów ubezpieczeniowych zawsze stara się zrozumieć potrzeby
+                i oczekiwania klienta,
+                aby zaproponować najlepsze rozwiązania i najkorzystniejsze oferty ubezpieczeniowe.
+
+                Oferujemy szeroki zakres usług, w tym ubezpieczenia majątkowe, ubezpieczenia zdrowotne,
+                ubezpieczenia na życie oraz ubezpieczenia dla firm. Nasza oferta jest bardzo elastyczna i dostosowywana
+                do potrzeb
+                i wymagań klientów.
+            </p>
+            <p class="text-justify">Świadczymy obsługę klientów zagranicznych.</p>
+            <p class="text-justify" style="font-weight:bold; font-style: italic;">
+                Zaufaj nam i powierz swoje sprawy w ręce profesjonalistów.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="p-3 m-nav-fix pt-5" id="team" style="background-color: #fbfbfb;">
+        <div class="container text-center">
+            <h1 class="b my-5 text-center">Zespół</h1>
+            <div class="card mb-3">
+                <div class="row g-0 person-box">
+                    <div class="col-md-4 img ">
+                        <img src="img/team/mens.png" class="img-fluid rounded-start" alt="Michał Kowalski">
+                    </div>
+                    <div class="col-md-8 description">
+                        <div class="card-body description_box">
+                            <h5 class="card-title team__name">
+                                <span class="line"></span>
+                                Michał Kowalski
+                            </h5>
+                            <p class="card-text team__role">
+                                Ekspert ds. ubezpieczeń majątkowych i komunikacyjnych
+                            </p>
+                            <p class="card-text team__description">
+                                Michał ukończył studia na kierunku Zarządzanie i Marketing na Uniwersytecie Ekonomicznym
+                                w Poznaniu. Posiada ponad 25-letnie doświadczenie w branży ubezpieczeniowej, pracując
+                                zarówno dla małych, lokalnych firm, jak i dużych korporacji. Michał jest również
+                                certyfikowanym doradcą ubezpieczeniowym.
+                            </p>
+                            <div class="card-text team__contact">
+                                <span class="p-2">
+                                    <a href="mailto: kowal@ppu.pl" class="btn btn-primary">
+                                        <i class="fa-solid fa-envelope"></i> kowal@ppu.pl
+                                    </a>
+                                </span>
+                                <span class="p-2">
+                                    <a href="tel: 888-888-888" class="btn btn-primary">
+                                        <i class="fa-solid fa-phone"></i> 888 888 888
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="row g-0 person-box">
+                    <div class="col-md-4 img">
+                        <img src="img/team/2men.png" class="img-fluid rounded-start" alt="Jan Wrona">
+                    </div>
+                    <div class="col-md-8 description">
+                        <div class="card-body">
+                            <h5 class="card-title team__name">
+                                <span class="line"> </span> Jan Wrona
+                            </h5>
+                            <p class="card-text team__role">
+                                Starszy specjalista ds. ubezpieczeń
+                            </p>
+                            <p class="card-text team__description">
+
+                                Jan Wrona to doświadczony agent ubezpieczeniowy z ponad 30-letnim doświadczeniem w
+                                branży.
+                                Przez większość swojej kariery zajmował się sprzedażą ubezpieczeń majątkowych i na
+                                życie, a także doradztwem finansowym. Jan zawsze stawia klienta na pierwszym
+                                miejscu i stara się zapewnić im ochronę ubezpieczeniową, która spełni ich potrzeby
+                                i oczekiwania.
+                                Zaczynał swoją karierę jako agent ubezpieczeniowy w lokalnym biurze ubezpieczeniowym, a
+                                następnie awansował na stanowisko menadżera. Przez wiele lat zarządzał zespołem agentów
+                                i działał jako koordynator sprzedaży, który pomagał klientom wybierać odpowiednie
+                                produkty ubezpieczeniowe i wdrażać strategie finansowe.
+                            </p>
+                            <div class="card-text team__contact">
+                                <span class="p-2">
+                                    <a href="mailto: janWrona@ppu.pl" class="btn btn-primary">
+                                        <i class="fa-solid fa-envelope"></i> janWrona@ppu.pl
+                                    </a>
+                                </span>
+                                <span class="p-2">
+                                    <a href="tel: 222-111-222" class="btn btn-primary">
+                                        <i class="fa-solid fa-phone"></i> 222 111 222
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="row g-0 person-box">
+                    <div class="col-md-4 img">
+                        <img src="img/team/1women.png" class="img-fluid rounded-start" alt="Agata Marchew">
+                    </div>
+                    <div class="col-md-8 description">
+                        <div class="card-body">
+                            <h5 class="card-title team__name">
+                                <span class="line"></span>
+                                Agata Marchew
+                            </h5>
+                            <p class="card-text team__role">
+                                Specjalistka ds. ubezpieczeń na życie
+                            </p>
+                            <p class="card-text team__description">
+
+                                Agata Marchew to doświadczona agentka ubezpieczeniowa specjalizująca się w
+                                ubezpieczeniach na życie.
+                                Posiada ponad 15 lat doświadczenia w branży ubezpieczeniowej, w tym 10 lat pracy w
+                                specjalizacji na
+                                życie. Jej praca polega na doradztwie w zakresie ubezpieczeń na życie i inwestycjach, a
+                                także na
+                                sprzedaży produktów ubezpieczeniowych.
+
+                                Jest ekspertką w dziedzinie ubezpieczeń na życie i posiada wiele certyfikatów i
+                                wyróżnień branżowych.
+                                Zawsze stara się rozwijać swoje umiejętności i uczestniczyć w szkoleniach i
+                                konferencjach branżowych, aby być
+                                na bieżąco z najnowszymi trendami i rozwiązaniami w dziedzinie ubezpieczeń na życie.
+                            </p>
+                            <div class="card-text team__contact">
+                                <span class="p-2">
+                                    <a href="mailto: agataMarchew@ppu.pl" class="btn btn-primary">
+                                        <i class="fa-solid fa-envelope"></i> agataMarchew@ppu.pl
+                                    </a>
+                                </span>
+                                <span class="p-2">
+                                    <a href="tel: 222-111-222" class="btn btn-primary">
+                                        <i class="fa-solid fa-phone"></i> 222 111 222
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content p-3 pt-5" id="specializations">
+        <h2 class="b my-5 text-center">Specjalizacje</h2>
+        <div class="container">
+            <div class="article-boxes desktop">
+                <div class="article-box" id="law-box-1">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia majątkowe
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ochrona mienia prywatnego i firmowego przed szkodami wynikającymi z różnych zdarzeń, takich jak
+                        pożar, kradzież czy zalanie
+                    </div>
+                </div>
+                <div class="article-box" id="law-box-2">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia na życie
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ubezpieczenia oferujące ochronę finansową dla bliskich w przypadku śmierci ubezpieczonego, a
+                        także możliwość oszczędzania na przyszłość.
+                    </div>
+                </div>
+                <div class="article-box" id="law-box-3">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia komunikacyjne
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ubezpieczenia odpowiedzialności cywilnej (OC) oraz autocasco (AC) dla pojazdów, zapewniające
+                        ochronę w razie kolizji, kradzieży czy uszkodzeń.
+                    </div>
+                </div>
+
+                <div class="article-box" id="law-box-4">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia zdrowotne
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ubezpieczenia oferujące dostęp do prywatnej opieki medycznej, leczenia oraz odszkodowań za
+                        utratę zdrowia.
+                    </div>
+                </div>
+
+                <div class="article-box" id="law-box-5">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia dla firm
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ochrona przedsiębiorstw przed ryzykami związanymi z prowadzeniem działalności, takimi jak szkody
+                        majątkowe, odpowiedzialność cywilna czy przerwanie działalności.
+                    </div>
+                </div>
+
+                <div class="article-box" id="law-box-6">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia turystyczne
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ubezpieczenia zapewniające ochronę podczas podróży, takie jak pokrycie kosztów leczenia za
+                        granicą, odszkodowania za utratę bagażu czy opóźnienia lotów.
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-boxes mobile">
+                <div class="article-box" id="law-box-1">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia majątkowe
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ochrona mienia prywatnego i firmowego przed szkodami wynikającymi z różnych zdarzeń, takich jak
+                        pożar, kradzież czy zalanie.
+                    </div>
+
+                </div>
+                <div class="article-box" id="law-box-2">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia na życie
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ubezpieczenia oferujące ochronę finansową dla bliskich w przypadku śmierci ubezpieczonego, a
+                        także możliwość oszczędzania na przyszłość.
+                    </div>
+                </div>
+                <div class="article-box" id="law-box-3">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia komunikacyjne
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ubezpieczenia odpowiedzialności cywilnej (OC) oraz autocasco (AC) dla pojazdów, zapewniające
+                        ochronę w razie kolizji, kradzieży czy uszkodzeń.
+                    </div>
+                </div>
+
+                <div class="article-box" id="law-box-4">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia zdrowotne
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ubezpieczenia oferujące dostęp do prywatnej opieki medycznej, leczenia oraz odszkodowań za
+                        utratę zdrowia.
+                    </div>
+                </div>
+
+                <div class="article-box" id="law-box-5">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia dla firm
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ochrona przedsiębiorstw przed ryzykami związanymi z prowadzeniem działalności, takimi jak szkody
+                        majątkowe, odpowiedzialność cywilna czy przerwanie działalności.
+                    </div>
+                </div>
+
+                <div class="article-box" id="law-box-6">
+                    <div class="article-box-top">
+                        <span class="line"></span> Ubezpieczenia turystyczne
+                    </div>
+
+                    <div class="article-box-bottom">
+                        Ubezpieczenia zapewniające ochronę podczas podróży, takie jak pokrycie kosztów leczenia za
+                        granicą, odszkodowania za utratę bagażu czy opóźnienia lotów.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="p-3 m-nav-fix pt-5" id="whyUs" style="background-color: #fbfbfb;">
+        <div class="container text-center">
+            <h1 class="b my-5 text-center">Dlaczego my?</h1>
+            <div class="why-us">
+                <section class="dl-blurbs">
+                    <dl>
+                        <dt><i class="far fa-smile"></i> Profesjonalna obsługa</dt>
+                        <dd>
+                            Nasi doświadczeni agenci ubezpieczeniowi oferują indywidualne podejście, dostosowane do
+                            potrzeb każdego klienta, zapewniając obsługę na najwyższym poziomie.
+                        </dd>
+
+                        <dt><i class="fas fa-check-double"></i> Szeroki wybór</dt>
+                        <dd>Współpracujemy z wieloma renomowanymi firmami ubezpieczeniowymi, aby oferować naszym
+                            klientom szeroki wybór produktów ubezpieczeniowych, dopasowanych do różnych potrzeb.
+                        </dd>
+
+                        <dt><i class="fas fa-medal"></i> Konkurencyjne ceny</dt>
+                        <dd>Dzięki naszej wiedzy i umiejętnościom negocjacyjnym, jesteśmy w stanie zapewnić naszym
+                            klientom atrakcyjne warunki cenowe na oferowane przez nas ubezpieczenia.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fas fa-shield-alt"></i> Solidne zabezpieczenie</dt>
+                        <dd>Naszym priorytetem jest zapewnienie naszym klientom spokoju ducha poprzez solidne
+                            zabezpieczenie majątku, zdrowia i życia w ramach wybranego pakietu ubezpieczeniowego.
+                        </dd>
+
+                        <dt><i class="fas fa-money-bill-wave"></i> Szybka likwidacja szkód</dt>
+                        <dd>W przypadku wystąpienia szkody, nasi agenci ubezpieczeniowi podejmują szybkie i sprawne
+                            działania, aby zapewnić naszym klientom jak najszybsze rozwiązanie problemu.</dd>
+
+                        <dt><i class="far fa-window-restore"></i> Transparentność warunków</dt>
+                        <dd>Dbamy o jasne i zrozumiałe przedstawienie warunków oferowanych ubezpieczeń, aby nasi klienci
+                            mogli świadomie podejmować decyzje dotyczące swojego zabezpieczenia.
+                        </dd>
+                    </dl>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class="p-3 pt-5" id="contact">
+        <div class="container text-center">
+            <h2 class="b my-5 text-center">Kontakt</h2>
+            <div class="contact-box m-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p class="b">PPU - Pewny Plan Ubezpieczeniowy</p>
+                            <p>ul. Krakowska 8/13B</p>
+                            <p>00-000 Poznań</p>
+                        </div>
+                        <div class="col-12 col-md-6 text-end">
+                            <p class="b">Biuro</p>
+                            <p>Telefon: <a class="a-normal" href="tel:000-111-000">000-111-000</a></p>
+                            <p class="mb-3">Email: <a class="a-normal" href="mailto: biuro@ppu.pl">biuro@ppu.pl</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="myForm">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email" required>
+                    <label for="email" class="form-label">Email</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="phone" id="phone" required>
+                    <label for="phone" class="form-label">Telefon</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="title" id="title" required>
+                    <label for="title" class="form-label">Tytuł wiadomości</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" name="message" placeholder="Wiadomość" id="message"
+                        style="height: 100px" required></textarea>
+                    <label for="message">Wiadomość</label>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success ppu__btn" type="submit">Wyślij</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="pt-5" style="background-color: #fbfbfb;">
+        <h2 class="b my-5 text-center">Znajdź nas</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24193.30848576577!2d-74.08241267404296!3d40.714415751169376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250c04f430689%3A0xf65049dd8310ba7d!2sLiberty%20Science%20Center!5e0!3m2!1spl!2spl!4v1680476500432!5m2!1spl!2spl"
+            width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+    <section class="ppu__footer footer" id="footer">
+        <div class="container">
+            <footer class="py-3 mt-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item" id="footer-item-about-us"><a href="#" class="nav-link px-2 text-muted">O
+                            nas</a></li>
+                    <li class="nav-item" id="footer-item-team"><a href="#team"
+                            class="nav-link px-2 text-muted">Zespół</a></li>
+                    <li class="nav-item" id="footer-item-specializations"><a href="#specializations"
+                            class="nav-link px-2 text-muted">Specjalizacje</a></li>
+                    <li class="nav-item" id="footer-item-why-us"><a href="#whyUs"
+                            class="nav-link px-2 text-muted">Dlaczego my</a></li>
+                    <li class="nav-item" id="footer-item-contact"><a href="#contact"
+                            class="nav-link px-2 text-muted">Kontakt</a></li>
+                </ul>
+                <p class="text-center text-muted">
+                    <span class="mr-20">© 2023 PPU</span>
+                    <span class="mr-20"><i class="fa-solid fa-phone"></i> <a class="text-white"
+                            href="tel: 000-111-000">000 111 000</a></span>
+                    <i class="fa-solid fa-envelope"></i> <a class="a-normal text-white"
+                        href="mailto: kowal@ppu.pl">kowal@ppu.pl</a>
+                </p>
+            </footer>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        function closeNav() {
+            let element = document.querySelector('#navbarSupportedContent');
+            if (element.classList.contains('show')) {
+                element.classList.remove('show');
+            }
+        }
+
+        function sendEmail() {
+            alert("Wiadomość wysłana!");
+        }
+    </script>
+</body>
+
+</html>
